@@ -43,7 +43,7 @@ class MyView: UIView {
         self.center = CGPoint(x: lastLocation.x + translation.x, y: lastLocation.y + translation.y)
     }
     
-    override func touchesBegan(_ touches: (Set<UITouch>!), with event: UIEvent!) {
+    override func touchesBegan(_ touches: (Set<UITouch>?), with event: UIEvent!) {
         // Promote the touched view
         self.superview?.bringSubview(toFront: self)
         
